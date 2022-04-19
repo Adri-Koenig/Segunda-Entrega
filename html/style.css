@@ -1,0 +1,477 @@
+@import url('https://fonts.googleapis.com/css2?family=Bungee&family=Lora:ital@1&family=Playfair+Display:ital@1&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.container-index {
+    display: grid;
+    grid-template-areas:
+        "header"
+        "section-one"
+        "section-two"
+        "footer";
+    grid-template-rows: auto auto auto auto;
+    row-gap: 2%;
+    min-height: 100vh;
+}
+
+body {
+    background-image: url(../Img/Picture/f2.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+
+
+/* HEADER */
+
+header {
+    grid-area: header;
+    display: flex;
+    justify-content: space-between;
+    background-image: url(../Img/Picture/f2.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    border-bottom: 3px solid darkblue;
+    font-family: 'Bungee', cursive;
+}
+
+/* Logo */
+
+.logo {
+    display: flex;
+}
+
+.helm {
+    width: 10%;
+    margin-left: 10px;
+}
+
+.title {
+    font-size: 1.2em;
+    display: flex;
+    align-items: center;
+    margin-left: 15px;
+}
+
+header h1 {
+    color: cyan;
+    text-shadow: blue 3px 2px;
+    font-size: 1em;
+    margin: 10px;
+    letter-spacing: 3px;
+    text-align: center;
+}
+
+/* /Logo */
+
+/* NAV */
+
+nav {
+    grid-area: nav;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.dropdown {
+    display: none;
+}
+
+header ul {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    list-style: none;
+    margin: 0;
+}
+
+header ul li a {
+    font-size: 1em;
+    margin: 0 10px;
+    text-decoration: none;
+    color: cyan;
+    text-shadow: blue 2px 1px;
+    letter-spacing: 3px;
+}
+
+header ul li a:hover {
+    color: blue;
+    transition: all .5s;
+}
+
+/* /NAV */
+
+/* /HEADER */
+
+/* SECTION 1*/
+.one {
+    grid-area: section-one;
+}
+
+.gif {
+    width: 100%;
+    height: 35rem;
+    margin: auto;
+    display: block;
+}
+
+h2 {
+    margin-top: 25px;
+    margin-bottom: 25px;
+    color: rgb(0, 255, 255);
+    text-shadow: blue 3px 2px;
+    font-family: 'Lora', serif;
+    letter-spacing: 3px;
+    text-align: center;
+}
+
+p {
+    font-family: 'Playfair Display', serif;
+    color: cyan;
+    text-shadow: blue 3px 2px;
+    font-size: 1.6em;
+}
+
+.p1 {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    text-align: end;
+    letter-spacing: 1px;
+}
+
+/* /SECTION 1 */
+
+/* SECTION 2 */
+
+.two {
+    grid-area: section-two;
+}
+
+.first {
+    display: flex;
+    flex-direction: row-reverse;
+    align-items: center;
+    width: 90%;
+    margin: auto;
+    padding: auto;
+}
+
+.img1 {
+    display: flex;
+    justify-content: flex-end;
+    width: 30%;
+    height: 500px;
+    margin-left: 3%;
+    border-radius: 50px;
+    border: 3px solid white;
+}
+
+.second {
+    display: flex;
+    align-items: center;
+    margin: auto;
+    width: 90%;
+    padding: auto;
+}
+
+.p2 {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    text-align: start;
+    letter-spacing: 1px;
+}
+
+.img2 {
+    width: 30%;
+    height: 300px;
+    margin-right: 3%;
+    border-radius: 50px;
+    border: 3px solid white;
+    display: flex;
+}
+
+/* /SECTION 2 */
+
+/* FOOTER */
+
+footer {
+    grid-area: footer;
+    display: flex;
+    justify-content: space-between;
+    border-top: 3px solid darkblue;
+    background-image: url(../Img/Picture/f2.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    align-items: center;
+}
+
+.logo2 {
+    display: flex;
+    width: 33%;
+}
+
+footer h4 {
+    font-family: 'Bungee', cursive;
+    font-size: 1.2em;
+    display: flex;
+    align-items: center;
+    margin-left: 15px;
+    color: cyan;
+    text-shadow: blue 3px 2px;
+
+}
+
+.autor {
+    width: 34%;
+    display: flex;
+    font-size: 0.85em;
+    color: cyan;
+    text-shadow: blue 3px 2px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    letter-spacing: 1px;
+    text-align: center;
+    justify-content: center;
+}
+
+.redes {
+    display: flex;
+    width: 33%;
+    justify-content: flex-end;
+}
+
+footer ul {
+    display: flex;
+    list-style: none;
+    margin-right: 3%;
+}
+
+.redes ul li:hover {
+    transform: scale(1.3, 1.3);
+    transition: all .5s;
+    cursor: pointer;
+}
+
+/* /FOOTER */
+
+/*          INFORMACIÓN            */
+
+.container-info {
+    display: grid;
+    grid-template-areas:
+        "header header header"
+        "artic-a artic-b artic-c"
+        "artic-d artic-e artic-f"
+        "footer footer footer";
+    grid-gap: 2em;
+    grid-template-rows: auto 45% 45% auto;
+    min-height: 100vh;
+}
+
+.artic-a {
+    grid-area: artic-a;
+    border-radius: 5%;
+    border: 3px solid white;
+    background-color: black;
+    margin-left: 2em;
+    padding: 5%;
+}
+
+.artic-a ul,
+.artic-d ul,
+.artic-f ul {
+    color: cyan
+}
+
+.artic-b {
+    grid-area: artic-b;
+    border-radius: 5%;
+    border: 3px solid white;
+    background-color: black;
+    padding: 5%;
+}
+
+.artic-c {
+    grid-area: artic-c;
+    border-radius: 5%;
+    border: 3px solid white;
+    background-color: black;
+    margin-right: 2em;
+    padding: 5%;
+}
+
+.artic-d {
+    grid-area: artic-d;
+    border-radius: 5%;
+    border: 3px solid white;
+    background-color: black;
+    margin-left: 2em;
+    padding: 5%;
+}
+
+.artic-e {
+    grid-area: artic-e;
+    border-radius: 5%;
+    border: 3px solid white;
+    background-color: black;
+    padding: 5%;
+}
+
+.artic-f {
+    grid-area: artic-f;
+    border-radius: 5%;
+    border: 3px solid white;
+    background-color: black;
+    margin-right: 2em;
+    padding: 5%;
+}
+
+.artic-a:hover,
+.artic-b:hover,
+.artic-c:hover,
+.artic-d:hover,
+.artic-e:hover,
+.artic-f:hover {
+    transform: translateY(-10px);
+    transition: all .5s;
+    cursor: pointer;
+}
+
+.info {
+    width: 100%;
+    display: flex;
+    margin-bottom: 1em;
+    font-size: 1.2em;
+    color: cyan;
+    text-shadow: blue 3px 2px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    letter-spacing: 3px;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+}
+
+.p-list {
+    font-family: 'Playfair Display', serif;
+    color: cyan;
+    text-shadow: blue 3px 2px;
+    font-size: 1.3em;
+    text-align: center;
+}
+
+.p-list2 {
+    font-family: 'Playfair Display', serif;
+    color: cyan;
+    text-shadow: blue 3px 2px;
+    font-size: 1.3em;
+}
+
+/*         /INFORMACIÓN            */
+
+@media (max-width: 768px) {
+
+    .helm {
+        display: none;
+    }
+
+    header {
+        font-size: 150%;
+        height: 7rem;
+        background-image: url(../Img/Picture/f2.jpg);
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-attachment: fixed;
+    }
+
+    .title {
+        font-size: 1.4em;
+        justify-items: center;
+        text-align: center;
+    }
+
+    .title-enjoy {
+        position: absolute;
+        z-index: 1;
+        align-items: center;
+        text-align: center;
+        width: 100%;
+        color: cyan;
+    }
+
+    .dropdown {
+        display: block;
+        margin-right: 1em;
+    }
+
+    header ul {
+        display: none;
+    }
+
+    .dropdown-menu {
+        font-size: 2rem;
+        border: solid 2px white;
+        border-radius: 5%;
+        text-align: center;
+        background-image: url(../Img/Picture/fondo1.jpg);
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-attachment: fixed;
+    }
+
+    .dropdown-item {
+        font-size: 1em;
+        font-family: 'Times New Roman', Times, serif;
+        text-decoration: none;
+        color: cyan;
+        text-shadow: blue 2px 1px;
+        letter-spacing: 3px;
+    }
+
+    header ul li a:active {
+        color: blue;
+        transition: all .5s;
+    }
+
+    .first,
+    .second {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .img1,
+    .img2 {
+        width: 80%;
+        height: 25rem;
+        margin: 5% 0;
+    }
+
+
+    .p1,
+    .p2 {
+        text-align: center;
+    }
+
+
+    .container-info {
+        display: flex;
+        flex-direction: column;
+        min-height: 100vh;
+    }
+
+    .artic-a,
+    .artic-b,
+    .artic-c,
+    .artic-d,
+    .artic-e,
+    .artic-f {
+        margin: 2% 5%;
+        padding: 5%;
+    }
+}
